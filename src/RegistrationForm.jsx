@@ -10,7 +10,7 @@ const registrationSchema = z
     efternavn: z.string().min(1, "Efternavn er påkrævet"),
 
     email: z.string().email("Din emailadresse er ugyldig"),
-    // kode
+
     password: z
       .string()
       .min(8, "Password skal være mindst 8 tegn")
